@@ -167,9 +167,31 @@
   </nav>
 
   <!-- ===================== HERO SECTION ===================== -->
-  <header class="min-h-screen flex items-center relative overflow-hidden" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(6,182,212,0.12) 0%, transparent 70%), #050d1a;">
+  <header class="min-h-screen flex items-center relative overflow-hidden" style="background: #050d1a;">
     <!-- Background grid decoration -->
-    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(34,211,238,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.4) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute inset-0 z-0" style="
+      background-image: url('me.png');
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
+      opacity: 0.50;
+      filter: grayscale(30%) brightness(0.7);
+      mix-blend-mode: luminosity;
+    "></div>
+
+    <!-- Overlay gradient agar teks tetap terbaca -->
+    <div class="absolute inset-0 z-0" style="
+      background: linear-gradient(
+        to right,
+        rgba(5,13,26,0.97) 0%,
+        rgba(5,13,26,0.85) 45%,
+        rgba(5,13,26,0.4) 100%
+      ),
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(6,182,212,0.12) 0%, transparent 70%);
+    "></div>
+
+    <!-- Background grid decoration -->
+    <div class="absolute inset-0 z-0 opacity-5" style="background-image: linear-gradient(rgba(34,211,238,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.4) 1px, transparent 1px); background-size: 60px 60px;"></div>
 
     <div class="max-w-6xl mx-auto px-6 py-32 relative z-10 w-full">
       <div class="grid md:grid-cols-5 gap-12 items-center">
